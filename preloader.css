@@ -2,11 +2,13 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    max-block-size:100%;
   }
   
   section.wrapper {
-    padding-top:50%; 
     padding: 40px 0;
+    margin-top:15%;
+    margin-bottom:10%;
   }
   div.spinner {
     -moz-animation: rotate 10s infinite linear;
