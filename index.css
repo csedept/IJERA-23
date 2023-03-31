@@ -1,0 +1,41 @@
+*{
+    margin :0 0 0 0;
+}
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  background-color:white;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color:white;
+  background-color: cornflowerblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.link
+{
+    background-color: cornflowerblue;
+}
+.navbar a:hover {
+  background-color:darkorange;
+  color: black;
+}
+.navimg img
+{
+    max-width:6%;
+    float:top;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    text-align: center;
+    float: none;
+    display: block;
+    width: 100%;
+  }
+}
