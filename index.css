@@ -17,18 +17,32 @@
   text-decoration: none;
   font-size: 17px;
 }
-.link
-{
-    background-color: cornflowerblue;
+.active {
+  background-color: #000;
 }
+
 .navbar a:hover {
   background-color:darkorange;
   color: black;
 }
 .navimg img
 {
-    max-width:6%;
+    width:7%;
     float:top;
+}
+.navimg h3
+{
+  text-align: center;
+  background-color:antiquewhite;
+  font-size:medium;
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar h3
+  {
+    font-size:small;
+  }
 }
 
 @media screen and (max-width: 600px) {
