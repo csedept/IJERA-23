@@ -1,3 +1,50 @@
 *{
     margin :0 0 0 0;
 }
+h3{
+  font-size:18px;
+  text-align: center;
+}
+@media screen and (max-width:800px) {
+  h3 {
+    font-size:11px;
+  }
+}
+.navbar img
+{
+    max-width:8%;
+    height: auto;
+}
+@media screen and (max-width:650px) {
+    .navbar img{
+        max-width:15%;
+    }
+}
+.navbar{
+    background-color: #f5f5f5;
+    max-width: 100%;
+    overflow:hidden;
+}
+.navbar a
+{
+    float:left;
+    display: block;
+    text-decoration: none;
+    background-color:cornflowerblue;
+    text-align: center;
+    padding:12px 4.728%;
+}
+.navbar a:hover
+{
+    background-color: #6127e9;
+    color:white;
+}
+.navbar a.active
+{
+    background-color: rgb(255, 188, 43);
+    color: black;
+}
+.list li {
+    display:none;
+}
+
