@@ -1,3 +1,8 @@
+window.onload = function() {
+  // Load the preloader page
+  window.location.href = "preloader.html";
+};
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
