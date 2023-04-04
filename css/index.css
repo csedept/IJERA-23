@@ -9,11 +9,6 @@
   font-size:18px;
   text-align: center;
   }
-  @media screen and (max-width:800px) {
-  h3 {
-    font-size:13px;
-  }
-  }
   /* default styles */
   .navbar {
   display: flex;
@@ -30,7 +25,7 @@
   @media screen and (max-width:650px) {
     .navbar img{
         margin:1px auto;
-        max-width:16%;
+        max-width:18.5%;
     }
   }
   
@@ -150,6 +145,10 @@
       border-radius:50%;
     }
   
+    h3 {
+      font-size:15px;
+    }
+
     .sidenav {
       padding-top:50%;
     }
