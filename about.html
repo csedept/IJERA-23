@@ -70,6 +70,29 @@
             </div>
           </nav>
         </header>
+        <div class="sidenav">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Journal</a>
+          <a href="conferences.html">Conferences</a>
+          <a href="#">Call for Paper</a>
+          <a href="#">Indexing</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Archive</a>
+      </div>
+  
+      <span class="sidenav-btn" onclick="openNav()">&#9776;</span>
+  
+      <script>
+          function openNav() {
+              document.querySelector('.sidenav').style.width = '250px';
+              
+          }
+  
+          function closeNav() {
+              document.querySelector('.sidenav').style.width = '0';
+          }
+      </script>
         <script src="script/preloader.js"></script>
         <script src="script\index.js"></script>
     </body>

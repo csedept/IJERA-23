@@ -1,10 +1,6 @@
 const navbar = document.getElementById('navbar');
-const sideNav = document.getElementById('sideNav');
-const sideNavButton = document.getElementById('sideNavButton');
-
-function toggleSideNav() {
-  sideNav.classList.toggle('active');
-}
+const sideNav = document.getElementById('sidenav');
+const sideNavButton = document.getElementById('sidenav-btn');
 
 function closeSideNav() {
   sideNav.classList.remove('active');
@@ -46,13 +42,22 @@ window.addEventListener('resize', () => {
 showNavbar();
 showSideNavButton();
 
-sideNavButton.addEventListener('click', toggleSideNav);
-sideNav.addEventListener('click', closeSideNav);
-
 function openNav() {
   document.querySelector('.sidenav').style.width = '250px';
 }
 
 function closeNav() {
   document.querySelector('.sidenav').style.width = '0';
+}
+
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollPos = currentScrollPos;
 }

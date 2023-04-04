@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/preloader.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/preloader.css">
     </head>
     <body>
       <!--Preloader-->
@@ -67,7 +67,6 @@
                   <a href="#">Indexing</a>
                   <a href="#">Contact Us</a>
                   <a href="#">Archive</a>
-                  <a href="#" class="icon" onclick="toggleNav()">&#9776;</a>
             </div>
           </nav>
         </header>
@@ -75,20 +74,21 @@
       <!-- Side Navigation for Small Devices -->
       <div class="sidenav">
           <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
           <a href="about.html">About Journal</a>
-          <a href="#">Conferences</a>
+          <a href="conferences.html">Conferences</a>
           <a href="#">Call for Paper</a>
           <a href="#">Indexing</a>
           <a href="#">Contact Us</a>
           <a href="#">Archive</a>
       </div>
   
-      <span class="sidenav-btn" onclick="openNav()">&#9776; Menu</span>
+      <span class="sidenav-btn" id="sidenav-btn" onclick="openNav()">&#9776;</span>
   
       <script>
           function openNav() {
               document.querySelector('.sidenav').style.width = '250px';
+              document.getElementById("sidenav-btn").style.display="none"
           }
   
           function closeNav() {
