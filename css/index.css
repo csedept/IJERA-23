@@ -6,9 +6,9 @@
     box-sizing: border-box;
   }
   h3{
-  font-size:18px;
+  font-size:26px;
   text-align: center;
-  padding: 6px 0;
+  padding-top:13px;
   }
   /* default styles */
   
@@ -52,7 +52,7 @@
     font-size: 16px;
     color: white;
     background-color:rgba(235,20,83,0.9);
-    padding: 10px;
+    padding: 10px 45px;
   }
   
   .dropdown:hover .dropbtn {
@@ -88,7 +88,7 @@
   .navbar img
   {
     max-width:16%;
-    margin:20px auto;
+    margin:10px auto;
   }
   @media screen and (max-width:650px) {
     .navbar img{
