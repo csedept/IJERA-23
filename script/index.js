@@ -52,10 +52,8 @@ function closeNav() {
   document.getElementById("sidenav-btn").style.display="block";
 }
 
-// Function to toggle subnav visibility
+// Function to toggle subnav visibility and prevent default link behavior when subnav is present
 function toggleSubnav(event) {
-  event.preventDefault();
-  event.stopPropagation();
   var subnav = event.target.nextElementSibling;
   if (subnav) {
       if (subnav.style.display === "block") {
@@ -63,8 +61,11 @@ function toggleSubnav(event) {
       } else {
           subnav.style.display = "block";
       }
+      event.preventDefault();
+      event.stopPropagation();
   }
 }
+
 // Add event listener to all links in the sidenav
 var sidenavLinks = document.querySelectorAll('.sidenav a');
 for (var i = 0; i < sidenavLinks.length; i++) {

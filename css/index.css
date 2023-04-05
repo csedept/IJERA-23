@@ -112,7 +112,7 @@
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 25px;
     text-decoration: none;
     font-size: 18px;
     color: #333;
@@ -183,9 +183,14 @@
       padding-top: 15px 4px;
   
     }
+    .sidenav .active
+    {
+      color: white;
+      background-color:rgba(235,20,83,0.5);
+    }
 
     .sidenav {
-      padding-top:50%;
+      padding-top:25%
     }
   
     .sidenav a {
