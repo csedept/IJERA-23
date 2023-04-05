@@ -44,14 +44,34 @@ showSideNavButton();
 
 function openNav() {
   document.querySelector('.sidenav').style.width = '250px';
+  document.getElementById("sidenav-btn").style.display="none";
 }
 
 function closeNav() {
   document.querySelector('.sidenav').style.width = '0';
+  document.getElementById("sidenav-btn").style.display="block";
+}
+
+// Function to toggle subnav visibility
+function toggleSubnav(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  var subnav = event.target.nextElementSibling;
+  if (subnav) {
+      if (subnav.style.display === "block") {
+          subnav.style.display = "none";
+      } else {
+          subnav.style.display = "block";
+      }
+  }
+}
+// Add event listener to all links in the sidenav
+var sidenavLinks = document.querySelectorAll('.sidenav a');
+for (var i = 0; i < sidenavLinks.length; i++) {
+  sidenavLinks[i].addEventListener('click', toggleSubnav);
 }
 
 let prevScrollPos = window.pageYOffset;
-
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollPos > currentScrollPos) {

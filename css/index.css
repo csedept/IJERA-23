@@ -8,7 +8,7 @@
   h3{
   font-size:18px;
   text-align: center;
-  margin: 6px 0;
+  padding: 6px 0;
   }
   /* default styles */
   .navbar {
@@ -20,18 +20,18 @@
   
   .navbar img
   {
-    max-width:8%;
-    margin:0px auto;
+    max-width:16%;
+    margin:20px auto;
   }
   @media screen and (max-width:650px) {
     .navbar img{
-        margin:1px auto;
+        margin:5px auto;
         max-width:30%;
     }
   }
   
   .navbar a {
-    background-color: cornflowerblue;
+    background-color:rgba(235,20,83,0.9);
   color: #fff;
   text-decoration: none;
   padding: 10px ;
@@ -47,13 +47,13 @@
   }
   
   .navbar a:hover {
-    background-color: #6127e9;
-    color:white;
+    background-color:pink;
+    color:black;
   }
   .active
   {
     color: cornsilk;
-    background-color:rgba(255, 162, 0, 0.097)
+    background-color:rgba(235,20,83,0.5);
   }
   /*dropdown*/  
   .list {
@@ -87,7 +87,7 @@
   }
   
   .sidenav a:hover {
-    color: #0645AD;
+    color:rgba(235,20,83,0.5);
   }
   
   .sidenav .closebtn {
@@ -101,7 +101,31 @@
   .sidenav-btn {
     display: none;
   }
-  
+
+.subnav {
+  display: none; 
+  padding-left: 15px;
+}
+
+.subnav li {
+  margin-bottom: 5px; 
+}
+
+.subnav a {
+  color: #333; 
+  text-decoration: none;
+}
+
+.subnav a:hover {
+  color: #007bff; 
+}
+
+.sidenav a:hover + .subnav,
+.sidenav a.active + .subnav,
+.subnav:hover {
+  display: block;
+}
+
   @media only screen and (max-width: 768px) {
     /* Side Navigation for Small Devices */
     .sidenav-btn {
@@ -121,8 +145,8 @@
     }
   
     h3 {
-      font-size:14px;
-      margin-top: 15px;
+      font-size:13px;
+      padding-top: 15px 4px;
   
     }
 
@@ -131,7 +155,7 @@
     }
   
     .sidenav a {
-      padding:5% 25px;
+      padding:5% auto;
       font-size: 16px;
     }
   
