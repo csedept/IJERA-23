@@ -256,11 +256,8 @@
     color: blue
   }
   @media only screen and (max-width: 767px) {
-    body
-    {
-      margin-bottom:0;
-    }
     footer {
+      margin-bottom:0;
       padding: 20px 0;
       bottom: 0;
       width: 100%;
