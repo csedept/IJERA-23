@@ -1,0 +1,19 @@
+.coverimg img
+{
+    width:20%;
+    float:right;
+    padding:40px 20px;
+}
+@media screen and (max-width:767px)
+{
+    .coverimg
+    {
+        text-align: center;
+    }
+    .coverimg img
+    {
+        float: none;
+        width:60%;
+        text-align: center;
+    }
+}
