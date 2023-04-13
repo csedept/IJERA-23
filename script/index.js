@@ -1,10 +1,11 @@
 const navbar = document.getElementById('navbar');
 const sideNav = document.getElementById('sidenav');
 const sideNavButton = document.getElementById('sidenav-btn');
-
 function closeSideNav() {
   sideNav.classList.remove('active');
 }
+showNavbar();
+showSideNavButton();
 
 // Hide the navbar on small devices and show the side nav button
 function showSideNavButton() {
@@ -26,21 +27,10 @@ function showNavbar() {
   }
 }
 
-// Toggle the visibility of the dropdown menu on small devices
-const dropdownLinks = document.querySelectorAll('.dd');
-dropdownLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    link.querySelector('.list').classList.toggle('active');
-  });
-});
-
 window.addEventListener('resize', () => {
   showNavbar();
   showSideNavButton();
 });
-
-showNavbar();
-showSideNavButton();
 
 function openNav() {
   document.querySelector('.sidenav').style.width = '250px';
@@ -53,7 +43,7 @@ function closeNav() {
 }
 
 // Function to toggle subnav visibility and prevent default link behavior when subnav is present
-function toggleSubnav(event) {
+/*function toggleSubnav(event) {
   var subnav = event.target.nextElementSibling;
   if (subnav) {
       if (subnav.style.display === "block") {
@@ -64,7 +54,26 @@ function toggleSubnav(event) {
       event.preventDefault();
       event.stopPropagation();
   }
-}
+}*/
+// Get the parent element of the links
+var linksParent = document.getElementById("sidenav");
+
+// Add an event listener to the parent element
+linksParent.addEventListener("click", function(event) {
+  // Check if the clicked element is a link with a subnav
+  if (event.target.classList.contains("fa-caret-down")) {
+    // Get the subnav element
+    var subnav = event.target.parentNode.nextElementSibling;
+    if (subnav) {
+      // Toggle the subnav visibility
+      subnav.style.display = subnav.style.display === "block" ? "none" : "block";
+      // Prevent default link behavior and stop propagation
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }
+});
+
 
 // Add event listener to all links in the sidenav
 var sidenavLinks = document.querySelectorAll('.sidenav a');

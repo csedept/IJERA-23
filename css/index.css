@@ -136,11 +136,12 @@
 
 .subnav {
   display: none; 
-  padding-left: 15px;
 }
 
 .subnav li {
-  margin-bottom: 5px; 
+  list-style:none;
+  background-color: rgb(234, 171, 55);
+  margin:0;
 }
 
 .subnav a {
@@ -152,11 +153,11 @@
   color: #007bff; 
 }
 
-.sidenav a:hover + .subnav,
+/*.sidenav a:hover + .subnav,
 .sidenav a.active + .subnav,
 .subnav:hover {
   display: block;
-}
+}*/
 
   @media only screen and (max-width: 768px) {
     /* Side Navigation for Small Devices */
@@ -184,7 +185,7 @@
     .sidenav .active
     {
       color: white;
-      background-color:rgba(235,20,83,0.5);
+      background-color:rgba(235,20,83,0.8);
     }
 
     .sidenav {
@@ -195,7 +196,6 @@
       padding:5% auto;
       font-size: 16px;
     }
-  
     .sidenav-btn:hover {
       background-color: #eee;
     }
