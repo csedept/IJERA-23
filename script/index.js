@@ -42,44 +42,24 @@ function closeNav() {
   document.getElementById("sidenav-btn").style.display="block";
 }
 
-// Function to toggle subnav visibility and prevent default link behavior when subnav is present
-/*function toggleSubnav(event) {
+function toggleSubnav(event) {
+  // Check if the clicked element is a parent link with a subnav
   var subnav = event.target.nextElementSibling;
-  if (subnav) {
-      if (subnav.style.display === "block") {
-          subnav.style.display = "none";
-      } else {
-          subnav.style.display = "block";
-      }
-      event.preventDefault();
-      event.stopPropagation();
+  if (subnav && subnav.classList.contains("subnav")) {
+    // Toggle the subnav visibility
+    subnav.style.display = subnav.style.display === "block" ? "none" : "block";
+    // Prevent default link behavior and stop propagation
+    event.preventDefault();
+    event.stopPropagation();
   }
-}*/
-// Get the parent element of the links
-var linksParent = document.getElementById("sidenav");
-
-// Add an event listener to the parent element
-linksParent.addEventListener("click", function(event) {
-  // Check if the clicked element is a link with a subnav
-  if (event.target.classList.contains("fa-caret-down")) {
-    // Get the subnav element
-    var subnav = event.target.parentNode.nextElementSibling;
-    if (subnav) {
-      // Toggle the subnav visibility
-      subnav.style.display = subnav.style.display === "block" ? "none" : "block";
-      // Prevent default link behavior and stop propagation
-      event.preventDefault();
-      event.stopPropagation();
-    }
-  }
-});
-
+}
 
 // Add event listener to all links in the sidenav
 var sidenavLinks = document.querySelectorAll('.sidenav a');
 for (var i = 0; i < sidenavLinks.length; i++) {
   sidenavLinks[i].addEventListener('click', toggleSubnav);
 }
+
 
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function() {
