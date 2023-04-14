@@ -60,14 +60,16 @@ for (var i = 0; i < sidenavLinks.length; i++) {
   sidenavLinks[i].addEventListener('click', toggleSubnav);
 }
 
-
-let prevScrollPos = window.pageYOffset;
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollPos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
+// Define the scroll position at which to add the "scrolled" class
+const scrollThreshold = 100;
+// Listen for the "scroll" event on the window object
+window.addEventListener('scroll', () => {
+  // Get the current scroll position
+  const scrollPosition = window.scrollY || window.pageYOffset;
+  // Add or remove the "scrolled" class based on the scroll position
+  if (scrollPosition >= scrollThreshold) {
+    navbar.classList.add('navbar-scrolled');
   } else {
-    document.getElementById("navbar").style.top = "-100px";
+    navbar.classList.remove('navbar-scrolled');
   }
-  prevScrollPos = currentScrollPos;
-}
+});

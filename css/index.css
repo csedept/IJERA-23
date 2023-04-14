@@ -16,6 +16,7 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    transition: all 0.3s ease;
   }
   .navbar a.active
   {
@@ -94,6 +95,17 @@
         max-width:30%;
     }
   }
+  .navbar-scrolled {
+    background-color: rgba(235,20,83,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
   /* Side Navigation */
 .sidenav {
     height: 100%;
@@ -154,12 +166,6 @@
   color: #007bff; 
 }
 
-/*.sidenav a:hover + .subnav,
-.sidenav a.active + .subnav,
-.subnav:hover {
-  display: block;
-}*/
-
   @media only screen and (max-width: 768px) {
     /* Side Navigation for Small Devices */
     .sidenav-btn {
@@ -181,7 +187,7 @@
     h3 {
       font-size:12px;
       padding: 8px 6px;
-  
+      overflow:hidden;
     }
     .sidenav .active
     {
