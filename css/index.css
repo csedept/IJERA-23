@@ -226,7 +226,7 @@
   }
   footer
   {
-    color: white;
+    color:white;
     background-color:rgba(235,20,83);
     padding-top:20px;
     text-align: center;
@@ -244,7 +244,8 @@
   {
     display: block;
     text-decoration: none;
-    color: orange;
+    color: white;
+    font-size: 18px;
   }
   .quicklink a:hover
   {
@@ -261,11 +262,12 @@
   {
     display: block;
     text-decoration: none;
-    color: orange;
+    color: white;
+    font-size:18px;
   }
   .contact a:hover
   {
-    color: blue
+    color: black
   }
   @media  screen and (max-width: 767px) {
     footer {

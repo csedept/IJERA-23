@@ -11,7 +11,7 @@ document.onreadystatechange = function preloader() {
                 "#loader").style.display = "none";
                 document.querySelector(
                 "body").style.visibility = "visible";
-          }, 2500);
+          }, 600);
     }
 };
 
