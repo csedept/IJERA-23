@@ -92,7 +92,7 @@
   @media screen and (max-width:900px) {
     .navbar img{
         margin:5px auto;
-        max-width:30%;
+        max-width:45%;
     }
   }
   .navbar-scrolled {
@@ -276,6 +276,7 @@
       bottom:0px;
       width: 100%;
       overflow: hidden;
+      color: orange;
     }
     .contact
     {
