@@ -188,6 +188,8 @@
       font-size:12px;
       padding: 8px 6px;
       overflow:hidden;
+      background-color: rgba(235,20,83,0.8);
+      color:white;
     }
     .sidenav .active
     {
