@@ -7,11 +7,36 @@
     background-color:rgba(235,20,83,0.8);
     padding:150px;
 }
+.download-button {
+    background-color:rgb(255, 188, 43);
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-left:10%; 
+    cursor: pointer;
+  }
+  @media screen and (max-width:767px)
+  {
+    .download-button
+    {
+        margin-left: 20px;
+    }
+  }
+  .fa-file-pdf-o:before {
+    content: "\f1c1";
+  }
+    
 .authguidetext
 {
-    padding:5% 10%;
+    padding:2% 10%;
     text-align: justify;
     font-size: larger;
+    margin-bottom:25px;
 }
 .authguidetext ul
 {
@@ -31,7 +56,9 @@
     }
     .authguidetext
     {
-        font-size: large;
+        font-size:large;
+        padding: 20px 24px;
+        margin:0;
     }
 
 }
