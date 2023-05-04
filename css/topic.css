@@ -1,0 +1,50 @@
+.topics h2
+{
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 40px;
+    color:white;
+    background-color:rgba(235,20,83,0.8);
+    padding:150px;
+}
+.contents
+{
+    text-align:justify;
+    font-size:large;
+    padding:10%;
+    padding-top:6%;
+}
+.contents h4
+{
+    font-weight:550;
+    text-transform: uppercase;
+    margin:15px 0;
+}
+.contents ul
+{
+    padding-left: 20px;
+    margin: 25px 0;
+}
+.contents li
+{
+    margin:5px 0;
+}
+.a
+{
+    float: right;
+   
+}
+.b
+{
+    float: left;
+    padding-bottom:6%;
+}
+@media screen and (max-width:767px)
+{
+    .topics h2
+    {
+        text-align: center;
+        font-size: 25px;
+        padding:90px;
+    }
+}
