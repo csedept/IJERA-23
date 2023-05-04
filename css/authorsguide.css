@@ -60,5 +60,9 @@
         padding: 20px 24px;
         margin:0;
     }
-
+    .download-button:focus 
+    {
+        outline: none;
+        background-color: transparent;
+    }
 }
