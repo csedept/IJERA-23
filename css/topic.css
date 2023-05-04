@@ -47,4 +47,8 @@
         font-size: 25px;
         padding:90px;
     }
+    .contents
+    {
+        display: block;
+    }
 }
