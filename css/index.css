@@ -133,10 +133,6 @@
     transition: 0.3s;
   }
   
-  .sidenav a:hover {
-    color:rgba(235,20,83,0.5);
-  }
-  
   .sidenav .closebtn {
     position: absolute;
     top: 40px;
