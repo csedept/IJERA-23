@@ -43,6 +43,8 @@
   .dropdown {
     float: left;
     overflow: hidden;
+    display: flex;
+    flex-grow:1;
   }
   
   .dropdown .dropbtn {
@@ -62,7 +64,7 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    width: 200px;
+    width:220px;
     z-index: 1;
     padding-left:auto;
     padding-right:auto;
