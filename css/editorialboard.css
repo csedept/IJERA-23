@@ -5,7 +5,7 @@
     font-size: 40px;
     color:white;
     background-color:rgba(235,20,83,0.8);
-    padding:150px;
+    padding:110px;
 }
 .edboardmem
 {
@@ -14,12 +14,16 @@
     font-weight: 500;
     font-size: 25px;
     list-style:none;
-    padding-left:15%;
-    margin: 10% 0;
+    margin: 10% 15%;
 }
 .edboardmem li
 {
-    margin:30px;
+    margin:30px 0;
+}
+.edboardmem li p
+{
+    font-size:smaller;
+    
 }
 @media screen and (max-width:767px)
 {
@@ -27,12 +31,14 @@
     {
         text-align: center;
         font-size: 25px;
-        padding: 90px;
+        padding: 60px;
     }
     .edboardmem li
     {
-        margin:10% 0;
         font-size: 20px;
     }
-
+    .edboardmem li p
+    {
+        text-align: justify;
+    }
 }
