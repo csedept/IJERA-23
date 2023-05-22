@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
-      IJERA Paper Template
-    </title>
-    <link rel="stylesheet" type="text/css" href="css/copyright.css">
+    <title>IJERA Paper Template</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .mobile {
+        display: none;
+      }
+      
+      @media (max-width: 767px) {
+        .desktop {
+          display: none;
+        }
+        
+        .mobile {
+          display: block;
+          
+        }
+        .download-button {
+          background-color:rgb(255, 188, 43);
+          border: none;
+          color: black;
+          padding: 10px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin-top: 50px;
+          margin-left:10%; 
+          cursor: pointer;
+        }
+        @media screen and (max-width:767px)
+        {
+          .download-button
+          {
+              margin-left: 20px;
+          }
+        }
+        .fa-file-pdf-o:before {
+          content: "\f1c1";
+        }
+      }
+    </style>
   </head>
   <body>
-    <style>
-      *{
-    margin:0;
-    padding:0;
-  }
-  @media screen and (max-width:767px)
-  {
-   embed
-   {
-    width: 100%;
-    height: fit-content;
-   }   
-  }
-    </style>
-    <embed src="Media/IJERA_template.pdf" width="100%" height="750" style="background:transparent;">
+    <div class="desktop">
+      <embed src="Media/IJERA_template.pdf" width="100%" height="750" style="background: transparent;">
+    </div>
+    
+    <div class="mobile">
+      <a href="Media/IJERA_template.pdf" download>
+        <button class="download-button">
+          <i class="fa fa-file-pdf-o"></i> Download PDF
+        </button>
+      </a>
+    </div>
   </body>
 </html>
