@@ -18,6 +18,7 @@
         <meta name="keywords" content="ijera archive,ijera 2023 archive,international journal on emerging research areas,amal jyothi journal,ijera ajce, nacore publications,nacore">
         <!-- <link rel="stylesheet" type="text/css" href="css/preloader.css"> -->
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/archive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
@@ -85,6 +86,25 @@
           </nav>
         </header>
       <!-- Side Navigation for Small Devices -->
+      <!-- main -->
+      <main>
+        <div class="archive">
+          <h2>Archive</h2>
+        </div>
+        <section class="documents">
+          <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search by DOI or Title">
+          <table id="documentTable">
+            <tr>
+              <th>DOI</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Institute Name</th>
+              <th><img width="30" height="30" src="https://img.icons8.com/officel/30/pdf.png" alt="pdf"/></th>
+            </tr>
+          </table>
+        </section>
+      
+      </main>
       <div class="sidenav">
           <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="index.html">Home</a>
@@ -147,6 +167,7 @@
     </footer>
       <!-- <script src="script/preloader.js"></script> -->
       <script src="script/index.js"></script>
+      <script src="script/archive.js"></script>
   </body>
   
 </html>

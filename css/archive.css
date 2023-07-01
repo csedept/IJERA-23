@@ -1,0 +1,59 @@
+.archive h2
+{
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 40px;
+    color:white;
+    background-color:rgba(235,20,83,0.8);
+    padding:100px;
+}
+@media screen and (max-width:767px)
+{
+    .archive h2
+    {
+        text-align: center;
+        font-size: 25px;
+        padding:60px;
+    }
+    .documents
+    {
+       align-items: center;
+       font-size:12px;
+    }
+   
+}
+.documents
+  {
+    
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    margin:5% auto;
+    font-size: large;
+  }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  input[type=text] {
+    padding: 6px;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  
+  a.download-link {
+    text-decoration: none;
+    color: black;
+  }
+  a.download-link:hover
+  {
+   color: red;
+   font-size: 15px;
+  }
+  
