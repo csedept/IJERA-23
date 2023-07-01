@@ -49,7 +49,89 @@ table {
   }
 input[type=text]:focus
 {
-        color:red;
+  color:red;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+
+thead {
+  background-color: #f9f9f9;
+}
+
+@media only screen and (max-width: 600px) {
+  th,
+  td {
+    padding: 8px;
+  }
+  input[type=text]
+  {
+    font-size: small;
+    padding: 10px 0;
+  }
+  table {
+    display: block;
+    overflow-x: auto;
+    border: 1px solid black;
+  }
+
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Paper ID";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Title";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Authors";
+  }
+
+  td:nth-of-type(4):before {
+    content: "Institute Name";
+  }
+
+  td:nth-of-type(5):before {
+    content: "Download";
+  }
 }
 
   .author-column {
@@ -70,17 +152,18 @@ input[type=text]:focus
    font-size: 15px;
   }
   
-  #scrollToTopButton  {
+  #scrollToTopButton {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 9999;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(244, 60, 112, 0.836);
+    background-color:transparent;
     color: #fff;
-    font-size: 16px;
+    font-size: 24px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -88,9 +171,17 @@ input[type=text]:focus
   }
   
   #scrollToTopButton.show {
-    opacity: 1;
     display: block;
+    opacity: 1;
     visibility: visible;
+  }
+  
+  @media (max-width: 767px) {
+    #scrollToTopButton {
+      bottom: 25px;
+      right: 25px;
+      font-size: 20px;
+    }
   }
   
   
