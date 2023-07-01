@@ -1,31 +1,38 @@
 var documents = [
     {
-      DOI: "7964965",
-      Title: "Polarity Classification of Malayalam Document-A Rule Based Approach",
-      Authors: ["Lis Jose"],
-      InstituteName: "AJCE,Kanjirapally",
-      DownloadLink: "link1"
-    },
-    {
       DOI: "",
-      Title: "Automatic Fall Detection And Alert System ForHome Safety",
+      Title: "",
       Authors: [""],
-      InstituteName: "",
+      InstituteName: [""],
       DownloadLink: ""
     },
     {
-        DOI: "",
-        Title: "",
-        Authors: [""],
-        InstituteName: "",
-        DownloadLink: ""
-    }, 
+      DOI: "",
+      Title: "",
+      Authors: [""],
+      InstituteName: [""],
+      DownloadLink: ""
+    },
     {
-        DOI: "",
-        Title: "",
-        Authors: [""],
-        InstituteName: "",
-        DownloadLink: ""
+      DOI: "",
+      Title: "",
+      Authors: [""],
+      InstituteName: [""],
+      DownloadLink: ""
+    },
+    {
+      DOI: "",
+      Title: "",
+      Authors: [""],
+      InstituteName: [""],
+      DownloadLink: ""
+    },
+    {
+      DOI: "",
+      Title: "",
+      Authors: [""],
+      InstituteName: [""],
+      DownloadLink: ""
     },
   ];
   
@@ -37,9 +44,11 @@ var documents = [
       var row = document.createElement("tr");
       var doiCell = document.createElement("td");
       doiCell.textContent = documents[i].DOI;
+      doiCell.classList.add("doi-column");
       var titleCell = document.createElement("td");
       titleCell.textContent = documents[i].Title;
       var authorCell = document.createElement("td");
+      authorCell.classList.add("author-column");
       var authors = documents[i].Authors;
       for (var j = 0; j < authors.length; j++) {
         var authorName = authors[j];
@@ -76,8 +85,11 @@ var documents = [
     for (var i = 1; i < rows.length; i++) {
       var doi = rows[i].getElementsByTagName("td")[0].textContent.toLowerCase();
       var title = rows[i].getElementsByTagName("td")[1].textContent.toLowerCase();
+      var auth = rows[i].getElementsByTagName("td")[2].textContent.toLowerCase();
+      var ins = rows[i].getElementsByTagName("td")[3].textContent.toLowerCase();
   
-      if (doi.includes(input) || title.includes(input)) {
+      if (doi.includes(input) || title.includes(input) || auth.includes(input) || ins.includes(input))
+      {
         rows[i].style.display = "";
       } else {
         rows[i].style.display = "none";

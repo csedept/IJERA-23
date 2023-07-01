@@ -75,9 +75,12 @@
               <div class="dropdown">
                 <a href="#" class="dropbtn">Download <i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
-                  <a href="copyright.html"target="_blank">E-copyright Transfer Form</a>
+                  <!-- <a href="copyright.html"target="_blank">E-copyright Transfer Form</a>
                   <a href="papertemplate.html"target="_blank">Paper Template</a>
-                  <a href="helptile.html"target="_blank">Template help tile</a>
+                  <a href="helptile.html"target="_blank">Template help tile</a> -->
+                  <a href="Media/copyright-form-IJERA.pdf"target="_blank" download>E-copyright Transfer Form</a>
+                  <a href="Media/IJERA_template.pdf"target="_blank" download>Paper Template</a>
+                  <a href="Media/ijera_review-template.pdf"target="_blank" download>Template help tile</a>
                 </div>
               </div>
               <a href="archive.html" class="active">Archive</a>
@@ -86,25 +89,6 @@
           </nav>
         </header>
       <!-- Side Navigation for Small Devices -->
-      <!-- main -->
-      <main>
-        <div class="archive">
-          <h2>Archive</h2>
-        </div>
-        <section class="documents">
-          <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search by DOI or Title">
-          <table id="documentTable">
-            <tr>
-              <th>DOI</th>
-              <th>Title</th>
-              <th>Author</th>
-              <th>Institute Name</th>
-              <th><img width="30" height="30" src="https://img.icons8.com/officel/30/pdf.png" alt="pdf"/></th>
-            </tr>
-          </table>
-        </section>
-      
-      </main>
       <div class="sidenav">
           <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="index.html">Home</a>
@@ -133,15 +117,37 @@
           </ul>
           <a href="#">Download <i class="fa fa-caret-down"></i></a>
             <ul class="subnav">
-              <li><a href="copyright.html"target="_blank">E-copyright Transfer Form</a></li>
+              <!-- <li><a href="copyright.html"target="_blank" download>E-copyright Transfer Form</a></li>
               <li><a href="papertemplate.html"target="_blank">Paper Template</a></li>
-              <li><a href="helptile.html"target="_blank">Template help tile</a></li>
+              <li><a href="helptile.html"target="_blank">Template help tile</a></li> -->
+              <li><a href="Media/copyright-form-IJERA.pdf" target="_blank" download>E-copyright Transfer Form</a></li>
+              <li><a href="Media/IJERA_template.pdf" target="_blank" download>Paper Template</a></li>
+              <li><a href="Media/ijera_review-template.pdf" target="_blank" download>Template help tile</a></li>
             </ul>
           <a href="archive.html" class="active">Archive</a>
           <a href="contact.html">Contact Us</a>
       </div>
       <span class="sidenav-btn" id="sidenav-btn" onclick="openNav()">&#9776;</span>
     <!-- End Side Navigation -->
+     <!-- main -->
+      <main>
+        <div class="archive">
+          <h2>Archive</h2>
+        </div>
+        <section class="documents">
+          <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search by DOI, Title, Author or Institute">
+          <table id="documentTable">
+            <tr>
+              <th>DOI</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Institute Name</th>
+              <th><img width="30" height="30" src="https://img.icons8.com/officel/30/pdf.png" alt="pdf"/></th>
+            </tr>
+          </table>
+        </section>
+      
+      </main>
     <footer>
       <div class="quicklink">
         <h4>Quick Links</h4>
