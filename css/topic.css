@@ -50,5 +50,6 @@
     .contents
     {
         display: block;
+        text-align:start;
     }
 }

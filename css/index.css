@@ -95,6 +95,11 @@
         margin:5px auto;
         max-width:45%;
     }
+    .navbar
+    {
+      background-color:rgba(221, 190, 111, 0.278);
+      padding-top:12%;
+    }
   }
   .navbar-scrolled {
     background-color: rgba(235,20,83,0.9);
@@ -176,17 +181,23 @@
       width: 40px;
       line-height:40px;
       text-align: center;
-      background-color:#ddd;
+      background-color:#ededed;
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius:50%;
     }
-  
+    .cover
+    {
+      padding-top: 5px;
+      background-color: rgba(228, 209, 209, 0.432);
+
+    }
     nav h3 {
       font-size:12px;
       padding: 8px 6px;
       overflow:hidden;
       color: white;
-      background-color:rgba(235,20,83);
+      background-color:rgba(235, 20, 85);
+      position: fixed;
     }
     .sidenav .active
     {
@@ -268,6 +279,41 @@
   {
     color: black
   }
+  #scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:transparent;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: opacity 0.3s, visibility 0.3s;
+    -webkit-transition: opacity 0.3s, visibility 0.3s;
+    -moz-transition: opacity 0.3s, visibility 0.3s;
+    -ms-transition: opacity 0.3s, visibility 0.3s;
+    -o-transition: opacity 0.3s, visibility 0.3s;
+}
+  
+  #scrollToTopButton.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @media (max-width: 767px) {
+    #scrollToTopButton {
+      bottom: 25px;
+      right: 25px;
+      font-size: 20px;
+    }
+  }
   @media  screen and (max-width: 767px) {
     footer {
       margin:0;
@@ -275,7 +321,7 @@
       bottom:0px;
       width: 100%;
       overflow: hidden;
-      color: orange;
+      color: rgb(255, 230, 166);
     }
     .contact
     {

@@ -49,7 +49,7 @@ table {
   }
 input[type=text]:focus
 {
-  color:red;
+  color:rgba(235,20,83,0.8);
 }
 table {
   width: 100%;
@@ -64,10 +64,10 @@ thead {
 }
 
 @media only screen and (max-width: 600px) {
-  th,
+  /* th,
   td {
-    padding: 8px;
-  }
+    padding:5px;
+  } */
   input[type=text]
   {
     font-size: small;
@@ -101,6 +101,7 @@ thead {
     border: none;
     position: relative;
     padding-left: 50%;
+    font-size:large;
   }
 
   td:before {
@@ -112,7 +113,10 @@ thead {
     white-space: nowrap;
     font-weight: bold;
   }
-
+  td.author-column
+  {
+    width: fit-content;
+  }
   td:nth-of-type(1):before {
     content: "Paper ID";
   }
@@ -148,42 +152,8 @@ thead {
   }
   a.download-link:hover
   {
-   color: red;
-   font-size: 15px;
+   color: rgba(235,20,83,0.8);
   }
-  
-  #scrollToTopButton {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color:transparent;
-    color: #fff;
-    font-size: 24px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: opacity 0.3s, visibility 0.3s;
-  }
-  
-  #scrollToTopButton.show {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  @media (max-width: 767px) {
-    #scrollToTopButton {
-      bottom: 25px;
-      right: 25px;
-      font-size: 20px;
-    }
-  }
-  
 .tempinfo
 {
   text-align: center;
