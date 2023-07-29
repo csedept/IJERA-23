@@ -3,13 +3,96 @@
     padding:0;
     box-sizing: border-box;
   }
-  nav h3{
-  font-size:20px;
+  .maincontainer
+  {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+  .headtext
+  {
+    background-color: rgba(190, 174, 137, 0.192);
+    width: 100%;
+    padding:7px 0;
+    font-size:medium;
+  }
+  .mainlogo img
+  {
+    width:18%;
+  }
+  .mainlogo
+  {
+    width: 100%;
+    padding:8px 0;
+    background-color: white;
+  }
+  @media screen and (min-width:430),(max-width:767px)
+  {
+    .maincontainer
+    {
+      background-color: rgba(221, 190, 111, 0.278);
+    }
+    .headtext
+    {
+      position: fixed;
+      padding:2% 5px;
+      background-color: rgba(235, 20, 85);
+      color: white;
+    }
+    .headtext h3
+    {
+      font-size:12px;
+    }
+    .mainlogo
+    {
+      margin-top:6%;
+      background-color: transparent;
+    }
+    .mainlogo img
+    {
+      width: 45%;
+      
+    }
+  }
+  @media screen and (max-width:429px)
+  {
+    .mainlogo
+    {
+      margin-top: 14%;
+      background-color: transparent
+    }
+    
+  }
+   /* nav h3{
+  font-size:medium;
   text-align: center;
   padding:5px 0px;
-  background-color: rgba(190, 174, 137, 0.192);
+  background-color:rgba(235, 20, 85);
+  color: white;
   margin: 0;
+  width: 100%;
+  position:fixed;
   }
+  .navbarimg
+  {
+    margin-top: 26px;
+    width:16%;
+  }
+  @media screen and (max-width:767px)
+  {
+    .navbarimg
+    {
+      width:45%;
+    }
+    nav h3 {
+      font-size:12px;
+      padding: 8px 6px;
+      overflow:hidden;
+      position: fixed;
+    }
+  }  */
   /* default styles */
   .navbar {
     display: flex;
@@ -84,17 +167,7 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
-  .navbar img
-  {
-    max-width:16%;
-    margin:10px auto;
-  }
-  @media screen and (max-width:900px) {
-    .navbar img{
-        margin:5px auto;
-        max-width:45%;
-    }
+  @media screen and (max-width:767px) {
     .navbar
     {
       background-color:rgba(221, 190, 111, 0.278);
@@ -169,7 +242,6 @@
 }
 
   @media only screen and (max-width: 768px) {
-    /* Side Navigation for Small Devices */
     .sidenav-btn {
       display: block;
       cursor: pointer;
@@ -190,14 +262,6 @@
       padding-top: 5px;
       background-color: rgba(228, 209, 209, 0.432);
 
-    }
-    nav h3 {
-      font-size:12px;
-      padding: 8px 6px;
-      overflow:hidden;
-      color: white;
-      background-color:rgba(235, 20, 85);
-      position: fixed;
     }
     .sidenav .active
     {

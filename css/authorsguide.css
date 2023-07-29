@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .authorsguide h2
 {
     text-align: center;
@@ -42,7 +45,7 @@
 {
     list-style: none;
 }
-.authguidetext h2,h3
+.authguidetext h2,.authguidetext h3
 {
     margin:8px 0;
 }
