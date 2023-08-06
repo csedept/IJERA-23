@@ -65,35 +65,6 @@
     }
     
   }
-   /* nav h3{
-  font-size:medium;
-  text-align: center;
-  padding:5px 0px;
-  background-color:rgba(235, 20, 85);
-  color: white;
-  margin: 0;
-  width: 100%;
-  position:fixed;
-  }
-  .navbarimg
-  {
-    margin-top: 26px;
-    width:16%;
-  }
-  @media screen and (max-width:767px)
-  {
-    .navbarimg
-    {
-      width:45%;
-    }
-    nav h3 {
-      font-size:12px;
-      padding: 8px 6px;
-      overflow:hidden;
-      position: fixed;
-    }
-  }  */
-  /* default styles */
   .navbar {
     display: flex;
     justify-content: space-between;
