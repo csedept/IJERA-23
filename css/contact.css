@@ -1,70 +1,16 @@
-/* Style inputs, select elements and textareas
-input[type=text], input[type=email], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
-  
-  
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-    font-weight:600;
-    font-size: large;
-  }
-  
-  
-  input[type=submit] {
-    background-color:rgba(235,20,83,0.9);
-    color: white;
-    padding: 12px 20px;
-    margin: 1rem 0;
+Style for the embedded Google Form
+.embedded-form {
+    width: 100%; 
+    height: auto; 
+    max-width: 800px; 
+    margin: 0 auto; 
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
+    align-items: center;
   }
   
- 
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding:2rem 8rem;
-  }
-  @media screen and (max-width:767px)
-  {
-    .container
-    {
-        padding:2rem 2rem;
-    }
-  }
-
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
+  .embedded-form iframe {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
   
-
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  } */
