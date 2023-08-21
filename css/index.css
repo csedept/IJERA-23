@@ -280,13 +280,28 @@
   {
     color:white;
     background-color:rgba(235,20,83);
-    padding-top:20px;
+    padding:20px 0;
     text-align: center;
-    overflow: hidden
+    display: flex;
+    flex-direction: column;
+    grid-gap:10px;
+    /* overflow: hidden; */
+  }
+  .qlandc
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom:5px;
+  }
+  .seperater
+  {
+    border:1px solid white;
+    height:6rem;
   }
   .quicklink 
   {
-    border-right:2px solid white;
     text-align: center;
     display: inline-block;
     vertical-align: middle;
@@ -301,7 +316,7 @@
   }
   .quicklink a:hover
   {
-    color: black;
+    color: rgb(228, 181, 101);
   }
   .contact
   {
@@ -319,7 +334,7 @@
   }
   .contact a:hover
   {
-    color: black
+    color: rgb(228, 181, 101);
   }
   #scrollToTopButton {
     display: none;
