@@ -13,34 +13,29 @@
     background-color:rgba(235,20,83,0.8);
     padding:100px;
 }
-.aands
+.ethicspolicy
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    justify-content: center;
-    grid-gap:1rem;
     width: 100%;
-    max-width: 100%;
-    padding: 5% 10%;
+    max-width: 80%;
+    margin: 5% auto;
     font-size: larger;
 }
-.topicscovered
-{
-    padding-left:25px;
-}
-.sectwo
+.policylist
 {
     display: flex;
     flex-direction: column;
-    grid-gap:8px;
+    grid-gap:25px;
+    list-style: none;   
+    text-align: justify;
+}
+.policylist li
+{
+    display: flex;
+    flex-direction: column;
+    grid-gap:5px;
 }
 @media screen and (max-width:767px)
 {
-    .secone{
-        text-align: justify;
-        white-space: normal;
-    }
     .banner
     {
         text-align: center;

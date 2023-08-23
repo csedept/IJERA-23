@@ -1,9 +1,15 @@
 *
 {
     box-sizing: border-box;
-    
+    white-space: nowrap;
 }
-.edboard h2
+.edboard
+{
+    width: 100%;
+    max-width: 80%;
+    margin: 5% auto;
+}
+.edboard-h2
 {
     text-align: center;
     text-transform:uppercase;
@@ -12,6 +18,13 @@
     background-color:rgba(235,20,83,0.8);
     padding:100px;
 }
+.edboardcontent
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
 .edboardmem
 {
     display: block;
@@ -19,7 +32,11 @@
     font-weight: 500;
     font-size: 25px;
     list-style:none;
-    margin: 5% 10%;
+    margin: 0% 10%;
+}
+.edtext
+{
+    text-align: right;
 }
 .edboardmem li
 {
@@ -32,7 +49,16 @@
 }
 @media screen and (max-width:767px)
 {
-    .edboard h2
+    .edboardcontent
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .edtext
+    {
+        text-align: initial;
+    }
+    .edboard-h2
     {
         text-align: center;
         font-size: 25px;

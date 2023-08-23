@@ -479,14 +479,13 @@ var documents = [
       InstituteName: ["Universal Engineering College Kerala, India"],
       DownloadLink: "Journal DOI/Resmipriya/54.NACORE P 116.pdf"
     },
-    /*NO FILE IN DOI YET */
     {
       DOI: "NACORE P118",
       Title:"A High Speed Low Power 10T SRam With High Robustness",
       Authors: ["Sooraj K,",
       "Yasim Khan M"],
       InstituteName: ["College of Engineering Chengannur. Chengannur, India"],
-      DownloadLink: ""
+      DownloadLink: "Journal DOI/Bibin/NACORE P118.pdf"
     },
     {
       DOI: "NACORE P130",
@@ -494,7 +493,7 @@ var documents = [
       Authors: ["Akshay K.P,",
       "Ms.Dr.nitha C Vellayudan,","Muhamed Adhil P.M,","Sivasankar C.A,","Farhan C.C"],
       InstituteName: ["Universal Engineering College Kerala, India"],
-      DownloadLink: ""
+      DownloadLink: "Journal DOI/Bibin/NACORE P130.pdf"
     },
     {
       DOI: "NACORE P132",
@@ -505,7 +504,7 @@ var documents = [
       "Mrs. Rekha K S,", 
       "Sarath P O"],
       InstituteName: ["College Of Engineering Kidangoor Kottayam, Kerala, India"],
-      DownloadLink: ""
+      DownloadLink: "Journal DOI/Bibin/NACORE P132.pdf"
     },
     {
       DOI: "NACORE P149",
@@ -513,21 +512,21 @@ var documents = [
       Authors: ["Romal Raju,","Aparna Unni,","Athulya T S,",
       "Sandra Madhu,","Mrs. Rekha K S"],
       InstituteName: ["College of Engineering Kidangoor Kottayam,Kerala,India"],
-      DownloadLink: ""
+      DownloadLink: "Journal DOI/Bibin/NACORE P149.pdf"
     },
     {
       DOI: "NACORE P160",
       Title:"Ethical Hacking using the Switch Port Analyser in a Enterprise Network",
       Authors: ["Charukesh"],
       InstituteName: ["Indian Institute of Information Technology Design and Manufacturing Kurnool, Andhra Pradesh"],
-      DownloadLink: ""
+      DownloadLink: "Journal DOI/Bibin/NACORE P160.pdf"
     },
     {
       DOI: "NACORE P201",
       Title:"Green Cloud Computing: A Literature Survey",
       Authors: ["Aaron Samuel Mathew"],
       InstituteName: ["Amal Jyothi College of Engineering Kottayam, India"],
-      DownloadLink: ""
+      DownloadLink: "Journal DOI/Bibin/NACORE P201.pdf"
     },
     {
       DOI: "NACORE P216",
@@ -535,7 +534,7 @@ var documents = [
       Authors: ["Kevin Roy,Lino Shaji,",
       "Riya G Johnson,","Tince Tomy,","Jane George"],
       InstituteName: ["Amal Jyothi College of Engineering Kottayam, India"],
-      DownloadLink: ""
+      DownloadLink: "Journal DOI/Bibin/NACORE P216.pdf"
     },
     {
       DOI: "NACORE P228",
@@ -544,7 +543,7 @@ var documents = [
       "Dr. Jacob John,","Anto K Thomas,","Ashwin Sebastian,","Befin K Lalu,",
       "Diya Shaji"],
       InstituteName: ["Amal Jyothi College of Engineering Kottayam, India"],
-      DownloadLink: ""
+      DownloadLink: "Journal DOI/Bibin/NACORE P228.pdf"
     },
     {
       DOI: "NACORE P234",
@@ -553,7 +552,7 @@ var documents = [
       "Abhinav V V,","Aneeta Shajan,","Anjana S Nair,", 
       "Bini M Issac,","Neenu R"],
       InstituteName: ["Amal Jyothi College of Engineering Kottayam, India"],
-      DownloadLink: ""
+      DownloadLink: "Journal DOI/Bibin/NACORE P234.pdf"
     },
     {
       DOI: "NACORE P223",
@@ -564,9 +563,8 @@ var documents = [
       "Namita R,",
       "Sheezan Nabi"],
       InstituteName: ["Amal Jyothi College of Engineering Kottayam, India"],
-      DownloadLink: ""
+      DownloadLink: "Journal DOI/Bibin/NACORE_ P223.pdf"
     },
-    // NO DOI FILE TILL P223
     {
       DOI: "NACORE P227",
       Title:"PPT  Generation from Report",
