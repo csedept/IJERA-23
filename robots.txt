@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+Disallow: https://github.com/iamarobot2/IJERA-23/tree/af679bd4724549d5db86bdf07253a3a379e32a3c/Journal DOI
+Sitemap: https://ijera.in/sitemap.xml
