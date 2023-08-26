@@ -1,4 +1,3 @@
 User-Agent: *
 Disallow:
-Disallow:
 Sitemap: https://ijera.in/sitemap.xml
