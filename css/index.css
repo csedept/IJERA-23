@@ -17,6 +17,7 @@
     width: 100%;
     padding:7px 0;
     font-size:medium;
+    z-index: 9999;
   }
   .mainlogo img
   {
