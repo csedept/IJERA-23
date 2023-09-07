@@ -70,7 +70,7 @@
     }
     .edboardmem li p
     {
-        font-size: small;
+        /* font-size: small; */
         text-align: justify;
     }
 }
