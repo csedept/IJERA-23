@@ -30,147 +30,68 @@
     margin:5% auto;
     font-size: larger;
   }
+.card
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px 10px;
+  list-style: none;
+  transition: border 0.3s ease, transform 0.3s ease;
+  margin: 25px 0;
+}
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
+li.card:hover {
+  transform: scale(1.05);
+}
+.authlist
+{
+  list-style: none;
+}
+.search-container {
+  position: relative;
+  width: 100%;
+}
+.search-icon {
+  position: absolute;
+  left: 10px; /* Adjust as needed */
+  top: 35%;
+  transform: translateY(-50%);
+  height: 15px; /* Adjust as needed */
+  width: 15px; /* Adjust as needed */
+}
   input[type=text] {
+    border-radius: 15px;
     padding: 15px;
-    width: 100%;
+    padding-left: 60px;
+    width: 40%;
     margin-bottom: 2%;
     font-size: large;
     font-weight:600;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border:#ccc;
-  }
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 input[type=text]:focus
 {
   color:rgba(235,20,83,0.8);
-}
-table {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
 }
 
-
-
-thead {
-  background-color: #f9f9f9;
-}
-
-@media only screen and (max-width: 600px) {
-  /* th,
-  td {
-    padding:5px;
-  } */
+@media screen and (max-width:767px){
   input[type=text]
   {
+    width: 50%;
     font-size: small;
     padding: 10px 0;
-  }
-  table {
-    display: block;
-    overflow-x: auto;
-    border: 1px solid black;
-  }
-
-  thead,
-  tbody,
-  tr,
-  th,
-  td {
-    display: block;
-  }
-
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  tr {
-    border: 1px solid #ccc;
-  }
-
-  td {
-    border: none;
-    position: relative;
-    padding-left: 50%;
-    font-size:large;
-  }
-
-  td:before {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-    font-weight: bold;
-  }
-  td.author-column
-  {
-    width: fit-content;
-  }
-  td:nth-of-type(1):before {
-    content: "Paper ID";
-  }
-
-  td:nth-of-type(2):before {
-    content: "Title";
-  }
-
-  td:nth-of-type(3):before {
-    content: "Authors";
-  }
-
-  td:nth-of-type(4):before {
-    content: "Institute Name";
-  }
-
-  td:nth-of-type(5):before {
-    content: "Download";
+    padding-left: 40px;
   }
 }
-
-  .author-column {
-    width: 20%; 
-    white-space: pre-line; 
-  }
-  .doi-column
-  {
-    width:12%; 
-  }
-  a.download-link {
-    text-decoration: none;
-    color: black;
-  }
-  a.download-link:hover
-  {
-   color: rgba(235,20,83,0.8);
-  }
-/* .tempinfo
-{
-  text-align: center;
-  margin:8.5% auto;
-}  
-.blinking {
-  display:inline-block;
-  font-size: 2rem;
-  border-bottom: 10px solid #9ae2ff;
-  animation-name: blinking;
-  animation-duration: 1s;
-  animation-iteration-count: 100;
-}
-@keyframes blinking {
-  50% {
-    border-color: #ffcd5f;
-  }
-} */

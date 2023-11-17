@@ -1,4 +1,4 @@
-var documents = [
+/*var documents = [
     {
       DOI: "NACORE P303",
       Title: "Polarity Classification of Malayalam Document-A Rule Based Approach",
@@ -662,69 +662,29 @@ var documents = [
       InstituteName: ["Amal Jyothi College of Engineering Kottayam, India"],
       DownloadLink: "Journal DOI/Arun/73 NACORE23-P222.pdf"
     },
-  ];
-  
-  function populateTable() {
-    var table = document.getElementById("documentTable");
-    var tbody = document.createElement("tbody");
-  
-    for (var i = 0; i < documents.length; i++) {
-      var row = document.createElement("tr");
-      var doiCell = document.createElement("td");
-      doiCell.textContent = documents[i].DOI;
-      doiCell.classList.add("doi-column");
-      var titleCell = document.createElement("td");
-      titleCell.textContent = documents[i].Title;
-      var authorCell = document.createElement("td");
-      authorCell.classList.add("author-column");
-      var authors = documents[i].Authors;
-      for (var j = 0; j < authors.length; j++) {
-        var authorName = authors[j];
-        var authorLine = document.createElement("div");
-        authorLine.textContent = authorName;
-        authorCell.appendChild(authorLine);
-      }
-      var instituteCell = document.createElement("td");
-      instituteCell.textContent = documents[i].InstituteName;
-      var downloadCell = document.createElement("td");
-      var downloadLink = document.createElement("a");
-      downloadLink.href = documents[i].DownloadLink;
-      downloadLink.textContent = "Download";
-      downloadLink.classList.add("download-link");
-      downloadLink.target = "_blank";
-      downloadCell.appendChild(downloadLink);
-  
-      row.appendChild(doiCell);
-      row.appendChild(titleCell);
-      row.appendChild(authorCell);
-      row.appendChild(instituteCell);
-      row.appendChild(downloadCell);
-      tbody.appendChild(row);
-    }
-  
-    table.appendChild(tbody);
-  }
-  
-  function searchTable() {
-    var input = document.getElementById("searchInput").value.toLowerCase();
-    var table = document.getElementById("documentTable");
-    var rows = table.getElementsByTagName("tr");
-  
-    for (var i = 1; i < rows.length; i++) {
-      var doi = rows[i].getElementsByTagName("td")[0].textContent.toLowerCase();
-      var title = rows[i].getElementsByTagName("td")[1].textContent.toLowerCase();
-      var auth = rows[i].getElementsByTagName("td")[2].textContent.toLowerCase();
-      var ins = rows[i].getElementsByTagName("td")[3].textContent.toLowerCase();
-  
-      if (doi.includes(input) || title.includes(input) || auth.includes(input) || ins.includes(input))
-      {
-        rows[i].style.display = "";
+  ];*/
+
+function searchTable() {
+  var input = document.getElementById("searchInput").value.toLowerCase();
+  var cards = document.getElementsByClassName("card");
+  var breaks = document.getElementsByTagName("br");
+  var documents = document.getElementsByClassName("documents");
+
+  for (var i = 0; i < cards.length; i++) {
+      var cardText = cards[i].textContent.toLowerCase();
+
+      if (cardText.includes(input)) {
+          cards[i].style.display = "";
+          cards[i].style.margin = "25px auto"; // adjust as needed
+          cards[i].style.padding = "10px 10px"; // adjust as needed
       } else {
-        rows[i].style.display = "none";
+          cards[i].style.display = "none";
+          cards[i].style.margin = "0";
+          cards[i].style.padding = "0";
       }
-    }
   }
-populateTable();
+}
+
 
 window.onscroll = function() {
   showScrollToTopButton();
@@ -746,3 +706,4 @@ function scrollToTop() {
     window.scrollTo(0, position - position / 8);
   }
 }
+
