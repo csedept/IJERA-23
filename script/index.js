@@ -79,3 +79,36 @@ function scrollToTop() {
     window.scrollTo(0, position - position / 8);
   }
 }
+
+document.querySelectorAll('.secright .coverimg').forEach(function(img) {
+  img.addEventListener('click', function() {
+    var lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    var imgClone = img.cloneNode();
+    imgClone.style.maxWidth = '100%';
+    imgClone.style.maxHeight = '100%';
+    lightbox.appendChild(imgClone);
+    document.body.appendChild(lightbox);
+    lightbox.addEventListener('click', function() {
+      document.body.removeChild(lightbox);
+    });
+    lightbox.style.display = 'block';
+    lightbox.style.position = 'fixed';
+    lightbox.style.top = '0';
+    lightbox.style.left = '0';
+    lightbox.style.width = '100%';
+    lightbox.style.height = '100%';
+    lightbox.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    lightbox.style.zIndex = '9999';
+    lightbox.style.overflow = 'auto';
+    lightbox.style.transition = 'opacity 0.3s ease-in-out';
+    imgClone.style.display = 'block';
+    imgClone.style.maxWidth = '100%';
+    imgClone.style.maxHeight = '100%';
+    imgClone.style.margin = 'auto';
+    imgClone.style.position = 'absolute';
+    imgClone.style.top = '50%';
+    imgClone.style.left = '50%';
+    imgClone.style.transform = 'translate(-50%, -50%)';
+  });
+});
