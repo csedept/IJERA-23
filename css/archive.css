@@ -21,6 +21,33 @@
     }
    
 }
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 12px;
+  box-shadow: 5px 5px rgb(209, 224, 78);
+  font-size: larger;
+  margin-bottom: 1rem;
+}
+
+.active, .accordion:hover {
+  background-color: #ffe2e2;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 .documents
   {
     
@@ -45,7 +72,7 @@
 }
 
 li.card:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 .authlist
 {
@@ -54,6 +81,7 @@ li.card:hover {
 .search-container {
   position: relative;
   width: 100%;
+  margin-bottom: 2rem;
 }
 .search-icon {
   position: absolute;
