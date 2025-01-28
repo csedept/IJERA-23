@@ -681,18 +681,30 @@ function searchTable() {
   var cards = document.getElementsByClassName("card");
   var breaks = document.getElementsByTagName("br");
   var documents = document.getElementsByClassName("documents");
+  var accordion = document.getElementsByClassName("accordion")
+
+  
 
   for (var i = 0; i < cards.length; i++) {
       var cardText = cards[i].textContent.toLowerCase();
 
-      if (cardText.includes(input)) {
+      if(!input.length){
+        cards[i].parentElement.parentElement.previousElementSibling.classList.remove('active')
+        cards[i].parentElement.parentElement.style.maxHeight=null
+        console.log("test")
+      }
+
+      else if (cardText.includes(input)) {
           cards[i].style.display = "";
           cards[i].style.margin = "25px auto"; // adjust as needed
-          cards[i].style.padding = "10px 10px"; // adjust as needed
-      } else {
+          cards[i].style.padding = "10px 10px"; 
+          cards[i].parentElement.parentElement.previousElementSibling.classList.add('active')// adjust as needed
+          cards[i].parentElement.parentElement.style.maxHeight=cards[i].parentElement.parentElement.scrollHeight +"px"
+        } else {
           cards[i].style.display = "none";
           cards[i].style.margin = "0";
           cards[i].style.padding = "0";
+          cards[i].parentElement.parentElement.previousElementSibling.classList.remove('active')
       }
   }
 }
