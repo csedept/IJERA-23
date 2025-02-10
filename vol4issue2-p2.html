@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+      <title>AA Comprehensive Review of Advancing Cattle Monitoring and Behavior Classification using Deep Learning</title>
+      <link rel="icon" type="image/x-icon" href="Media/ijera_logo.png">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+      
+      <meta name="copyright" content="Copyright 2023 © ijera@amaljyothi.ac.in">
+      <meta name="google-site-verification" content="fDzQZ5iS1FC1t0WXWj3a42AD6ZmFbVHShQPOWS7solA" />
+      <meta name="keywords" content="journal aims and scope,international journal,aims and scope,ijera aims and scope,international journal on emerging research areas,amal jyothi journal,ijera ajce, nacore publications">
+       
+      
+      <meta name="description" content="This paper explores the application of deep learning
+      and image processing techniques for cattle disease detection and
+      pose estimation, drawing insights from various research papers.
+      The use of wearable sensors embedded in collars emerges as a
+      prominent method for monitoring cattle behavior and health. These
+      sensors, particularly accelerometers, effectively capture movement
+      data, facilitating the identification of behaviors like grazing, resting, walking, and ruminating. Several studies utilize supervised
+      machine learning algorithms such as Random Forest, Decision
+      Trees, and Linear Discriminant Analysis to classify these behaviors
+      with high accuracy. Further, deep learning models, especially
+      Convolutional Neural Networks (CNNs), demonstrate remarkable
+      capabilities in detecting specific cattle diseases.YOLOv5, known for
+      its speed and accuracy, proves effective in cattle detection.Image
+      preprocessing techniques,including grayscale conversion, noise removal, and data augmentation, enhance the accuracy and robustness of these models. Additionally,pose estimation techniques
+      like OpenPifPaf, combined with angle calculations between joints,
+      provide valuable insights into cattle posture and aid in the early
+      detection of lameness.
+      The integration of these advanced technologies presents a significant opportunity to advance precision livestock farming practices.
+      Early disease detection and efficient behavior monitoring can contribute to improved animal welfare, optimized farm management,
+      and enhanced productivity in the cattle industry.." />
+<meta name="citation_title" content="A Comprehensive Review of Advancing Cattle Monitoring and Behavior Classification using Deep Learning" />
+<meta name="citation_journal_title" content="INTERNATIONAL JOURNAL ON EMERGING RESEARCH AREAS (IJERA)" />
+	<meta name="citation_issn" content="2230-9993" />
+ 
+		<meta name="citation_volume" content="4" />
+	<meta name="citation_issue" content="2" />
+
+	<meta name="citation_author" content="Bashar Saad Falih" />
+	<meta name="citation_author" content="Łukasz Adam Gierz" />
+	<meta name="citation_author" content="Ghazwan Ahmed Al-Zaidi" />
+	<meta name="citation_publication_date" content="2024/11/05" />
+<meta name="citation_fulltext_world_readable" content="" />
+<meta name="citation_keywords" content="Artificial Intelligence; Feature Extraction; Deep Learning; Convolutional Neural Networks (CNNs);" />
+
+
+      
+      <!-- <link rel="stylesheet" type="text/css" href="css/preloader.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/aimsandscope.css">
+        <link rel="stylesheet" type="text/css" href="css/button.css">
+     
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <!--Preloader-->
+        <!-- <section class="wrapper" id="loader" >
+            <div class="spinner">
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+          </section> -->
+        <header>
+          <!--navbar-->
+          <nav>
+            <div class="maincontainer">
+              <div class="headtext">
+                <h3>INTERNATIONAL JOURNAL ON EMERGING RESEARCH AREAS (IJERA)</h3>
+              </div>
+              <div class="mainlogo">
+                <img src="Media/ijera_logo.png" alt="IJERA Logo">
+              </div>
+            </div>
+            <!--Top navbar-->
+            <div class="navbar" id="navbar">
+              <a href="index.html" >Home</a>
+              <div class="dropdown">
+                <a href="#" class="dropbtn active">About Journal <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="aimsandscope.html" class="active">Aims and Scope</a>
+                  <a href="EditorialBoard.html">Editorial Board</a>
+                  <a href="publicationethicspolicy.html">Publication Ethics Policy</a>
+                  <!-- <a href="#">Journal Policies</a> -->
+                  <a href="FAQs.html">FAQs</a>
+                </div>
+              </div>
+              <a href="indexing.html">Indexing</a>
+              <div class="dropdown">
+                <a href="#" class="dropbtn">Call for Papers <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="authorsguide.html">Author guidelines</a>
+                  <a href="topics.html">Topics</a>
+                  <a href="publicationcharges.html">Publication Charges</a>
+                  <a href="#">Citation</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#" class="dropbtn">Conferences <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="pastconferences.html">Past Conferences</a>
+                  <a href="#">Upcoming Conferences</a>
+                  <a href="Conference Proceedings/NACORE 2024 Proceedings.pdf" target="_blank">Conference Proceedings</a>
+                  <a href="#">Conference partners</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#" class="dropbtn">Download <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="Media/copyright-form-IJERA.pdf"target="_blank" download>E-copyright Transfer Form</a>
+                  <a href="Media/IJERA_template.pdf"target="_blank" download>Paper Template</a>
+                  <a href="Media/ijera_review-template.pdf"target="_blank" download>Template help tile</a>
+                </div>
+              </div>
+              <a href="archive.html">Archive</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
+          </nav>
+        </header>
+      <!-- Side Navigation for Small Devices -->
+      <div class="sidenav" id="sidenav">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html" >Home</a>
+          <a href="#" class="active">About Journal <i class="fa fa-caret-down"></i></a>
+          <ul class="subnav">
+            <li><a href="aimsandscope.html" class="active">Aims and Scope</a></li>
+            <li><a href="EditorialBoard.html">Editorial Board</a></li>
+            <li><a href="publicationethicspolicy.html">Publication Ethics Policy</a></li>
+            <!-- <li><a href="">Journal Policies</a></li> -->
+            <li><a href="FAQs.html">FAQ's</a></li>
+          </ul>
+          <a href="indexing.html">Indexing</a>
+          <a href="callforpaper.html">Call for Papers <i class="fa fa-caret-down"></i></a>
+          <ul class="subnav">
+            <li><a href="authorsguide.html">Author guidelines</a></li>
+            <li><a href="topics.html">Topics</a></li>
+            <li><a href="publicationcharges.html">Publication Charges</a></li>
+            <li><a href="#">Citation</a></li>
+          </ul>
+          <a href="#">Conferences <i class="fa fa-caret-down"></i></a>
+          <ul class="subnav">
+            <li><a href="pastconferences.html">Past Conferences</a></li>
+            <li><a href="#">Upcoming Conferences</a></li>
+            <li><a href="Conference Proceedings/NACORE 2024 Proceedings.pdf" target="_blank">Conference Proceedings</a></li>
+            <li><a href="#">Conference partners</a></li>
+          </ul>
+          <a href="#">Download <i class="fa fa-caret-down"></i></a>
+            <ul class="subnav">
+              <li><a href="Media/copyright-form-IJERA.pdf" target="_blank" download>E-copyright Transfer Form</a></li>
+              <li><a href="Media/IJERA_template.pdf" target="_blank" download>Paper Template</a></li>
+              <li><a href="Media/ijera_review-template.pdf" target="_blank" download>Template help tile</a></li>
+            </ul>
+          <a href="archive.html">Archive</a>
+          <a href="contact.html">Contact Us</a>
+      </div>
+      <span class="sidenav-btn" id="sidenav-btn" onclick="openNav()">&#9776;</span>
+    <!-- End Side Navigation -->
+
+    <main>
+            <h2 class="banner">A Comprehensive Review of Advancing Cattle
+              Monitoring and Behavior Classification using Deep
+              Learning</h2>
+            <div class="aands">
+                <h4> Abstract</h4>
+                <p>
+                  This paper explores the application of deep learning
+                  and image processing techniques for cattle disease detection and
+                  pose estimation, drawing insights from various research papers.
+                  The use of wearable sensors embedded in collars emerges as a
+                  prominent method for monitoring cattle behavior and health. These
+                  sensors, particularly accelerometers, effectively capture movement
+                  data, facilitating the identification of behaviors like grazing, resting, walking, and ruminating. Several studies utilize supervised
+                  machine learning algorithms such as Random Forest, Decision
+                  Trees, and Linear Discriminant Analysis to classify these behaviors
+                  with high accuracy. Further, deep learning models, especially
+                  Convolutional Neural Networks (CNNs), demonstrate remarkable
+                  capabilities in detecting specific cattle diseases.YOLOv5, known for
+                  its speed and accuracy, proves effective in cattle detection.Image
+                  preprocessing techniques,including grayscale conversion, noise removal, and data augmentation, enhance the accuracy and robustness of these models. Additionally,pose estimation techniques
+                  like OpenPifPaf, combined with angle calculations between joints,
+                  provide valuable insights into cattle posture and aid in the early
+                  detection of lameness.
+                  The integration of these advanced technologies presents a significant opportunity to advance precision livestock farming practices.
+                  Early disease detection and efficient behavior monitoring can contribute to improved animal welfare, optimized farm management,
+                  and enhanced productivity in the cattle industry.
+                </p>
+                <h5>Keywords</h5>
+                <div>
+                    <p><b>Artificial Intelligence, Feature Extraction, Deep
+                      Learning, Convolutional Neural Networks (CNNs)</b></p>
+                </div>
+                <div >
+                  <a href="archive/volume 4 issue 2/2.pdf" target="_blank"><button>Download PDF</button></a>
+                </div>
+            
+            </div>
+    </main>
+    <button id="scrollToTopButton" onclick="scrollToTop()"><img width="50" height="50" src="https://img.icons8.com/ios/50/circled-up-2.png" alt="circled-up-2"/></button>
+
+    <footer>
+      <button id="scrollToTopButton" onclick="scrollToTop()"><img width="50" height="50" src="https://img.icons8.com/ios/50/circled-up-2.png" alt="circled-up-2"/></button>
+      <div class="qlandc">
+        <div class="quicklink">
+          <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="authorsguide.html">Author guidelines</a>
+            <a href="papertemplate.html">IJERA Paper Template</a>
+            <a href="indexing.html">Indexing</a>
+        </div>
+        <div class="seperater"></div>
+        <div class="contact">
+          <h4>Contact Us</h4>
+          <!-- <a href="tel:+919447601251">Phone : 9447601251</a> -->
+          <a href="mailto:ijera@amaljyothi.ac.in">Email : ijera@amaljyothi.ac.in</a>
+        </div>
+      </div>
+      <div>
+        <p>Amal Jyothi College of Engineering Kanjirappally, Koovappally P.O.
+          <br>Kottayam Dt., Kerala ,India
+          <br>PIN - 686518
+      </div>
+      <br>
+        <p>Copyright 2023 &#169; ijera@amaljyothi.ac.in</p>
+    </footer>
+      <!-- <script src="script/preloader.js"></script> -->
+      <script src="script/index.js"></script>
+  </body>
+  
+</html>
